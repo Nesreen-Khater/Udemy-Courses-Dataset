@@ -3,7 +3,8 @@
 
 ## 📖 Overview  
 This project explores the **Udemy Courses Dataset** to analyze online learning trends, pricing strategies, and student engagement.  
-The analysis is done in **Python** and the results are presented in a **static dashboard**.  
+The analysis is done in **Python** using **pandas, matplotlib, and seaborn**, and results are presented in a **static dashboard**.  
+
 
 ---
 
