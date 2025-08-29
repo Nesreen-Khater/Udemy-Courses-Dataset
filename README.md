@@ -1,75 +1,70 @@
 # 📊 Udemy Courses Data Analysis  (Python)
 
-## 📌 Project Overview
-This project analyzes the **Udemy Courses dataset**, which contains details about courses, pricing, subscribers, reviews, and categories.  
-The analysis was performed using **Python (Pandas, Matplotlib, Seaborn)** and summarized in a **static dashboard**.
+
+## 📖 Overview  
+This project explores the **Udemy Courses Dataset** to analyze online learning trends, pricing strategies, and student engagement.  
+The analysis is done in **Python** and the results are presented in a **static dashboard**.  
 
 ---
 
-## 📂 Dataset Description
-The dataset includes:
+## 📂 Dataset  
+- **File:** `udemy_courses.csv`  
+- **Rows:** ~3,600 courses  
+- **Columns:**  
 
-- **course_id** → Unique ID of each course.  
-- **course_title** → Title of the course.  
-- **url** → Udemy course link.  
-- **is_paid** → Whether the course is Free or Paid.  
-- **price** → Course price (converted to integer).  
-- **num_subscribers** → Number of enrolled students.  
-- **num_reviews** → Number of student reviews.  
-- **num_lectures** → Total lectures in the course.  
-- **level** → Difficulty level (Beginner, Intermediate, Expert, All Levels).  
-- **content_duration** → Duration in hours.  
-- **published_timestamp** → Date published.  
-- **subject** → Course subject/category.  
-- **clean_course_title** → Cleaned version of the course title.  
-
----
-
-## 🛠️ Data Cleaning & Preparation
-- Converted `price` to integer.  
-- Converted `published_timestamp` to datetime.  
-- Dropped irrelevant index column.  
-- Handled missing values in `clean_course_title`.  
+| Column               | Description |
+|-----------------------|-------------|
+| course_id            | Unique identifier for each course |
+| course_title         | Title of the course |
+| url                  | Link to the course on Udemy |
+| is_paid              | Paid or Free |
+| price                | Course price |
+| num_subscribers      | Number of students enrolled |
+| num_reviews          | Number of student reviews |
+| num_lectures         | Number of lectures in the course |
+| level                | Course level (Beginner, Intermediate, Expert, All Levels) |
+| content_duration     | Course length (hours) |
+| published_timestamp  | Course publication date |
+| subject              | Subject area (Business, Web Dev, etc.) |
+| clean_course_title   | Preprocessed course title |
 
 ---
 
-## 📊 Static Dashboard
-The following visuals were created:
+## 🛠️ Tools & Libraries  
+- Python 3  
+- Jupyter Notebook  
+- **Libraries:** pandas, matplotlib, seaborn  
 
-- **Pie Charts**  
-  - Free vs Paid courses.  
-  - Courses per subject.  
-  - Subscribers per subject.  
+---
 
-- **Bar & Line Charts**  
-  - Courses per level.  
-  - Subscribers per level.  
-  - Growth of subscribers by year.  
+## 📊 Analysis & Insights  
+- **Total Subscribers:** 11.7M+  
+- **Total Profit:** $884M+  
+- **Avg. Course Price:** $66.01  
+- **Paid vs Free:** 91.6% Paid vs 8.4% Free  
+- **Most Popular Subject:** Web Development (≈68% of subscribers)  
+- **Top Course:** *"Learn HTML5 Programming From Scratch"* (250K+ subscribers)  
+- **Trend:** Strong growth until 2015, slight decline afterward  
 
-- **KPI Cards (Static)**  
-  - Total Subscribers.  
-  - Total Reviews.  
-  - Total Profit (Paid Courses).  
-  - Avg. Number of Lectures per Course.
- 
-- **Dashboard (Static)**
-  <img width="1285" height="848" alt="Udemy Dashboard" src="https://github.com/user-attachments/assets/9ae6f1b1-1bf4-44b9-aee3-2b6ae0ef205d" />
+---
+
+## 📷 Dashboard  
+A static dashboard was created to visualize:  
+- Subscribers per level & subject  
+- Distribution of course levels  
+- Top 10 courses by subscribers  
+- Yearly subscribers growth  
+- Paid vs Free courses  
+<img width="1285" height="848" alt="Udemy Dashboard" src="https://github.com/user-attachments/assets/e6efc8ac-97d2-43b9-8622-69e53731155b" />
+
 
 
 ---
 
-## 🔑 Key Insights
-- Most courses are **paid**, but free courses attract notable subscribers.  
-- **Web Development** and **Business** dominate in subscribers.  
-- **Beginner Level** has the highest share of courses and students.  
-- Subscriber growth increased steadily year by year.  
-
----
-
-## 🚀 Tools Used
-- **Python**  
-- **Pandas**  
-- **Matplotlib**  
-- **Seaborn**  
-
+## 🚀 How to Run  
+```bash
+git clone https://github.com/your-username/udemy-analysis.git
+cd udemy-analysis
+pip install -r requirements.txt
+jupyter notebook Udemy_Analysis.ipynb
 ---
